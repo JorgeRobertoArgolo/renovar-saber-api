@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/renovarsaber_db
+    username: renovarsaber_user
+    password: renovarsaber_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      # o Hibernate APENAS valida a estrutura, não cria as tabelas. Esse papel, será do Flyway
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true # Útil no ambiente local para ver as queries geradas no console.TODO: Remover em produção
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
