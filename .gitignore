@@ -1,33 +1,40 @@
-HELP.md
-target/
+# --- JAVA & MAVEN ---
+bin/
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.nextSnapshot
+release.properties
+/lib/
+
+# --- SPRING BOOT ---
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
+# --- IDEs ---
+# IntelliJ
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# VS Code
 .vscode/
+
+# Eclipse
+.settings/
+.classpath
+.project
+.factorypath
+
+# --- SISTEMA E LOGS ---
+log/
+*.log
+.DS_Store
