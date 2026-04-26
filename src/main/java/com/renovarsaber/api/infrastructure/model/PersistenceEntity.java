@@ -20,6 +20,7 @@ import java.util.UUID;
  * @author Jorge Roberto
  */
 @MappedSuperclass
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class PersistenceEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
